@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "css-loader": "^6.5.0",
+    "fetch": "^1.1.0",
+    "jquery": ">=1.8.0",
+    "md5": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
