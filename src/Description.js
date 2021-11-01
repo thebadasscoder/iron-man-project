@@ -3,18 +3,39 @@ import React, { Component } from 'react';
 class Description extends Component {
   state = {
     data: [],
+    isLoaded: false,
   };
   componentDidMount() {
-    const heroUrl = 'http://gateway.marvel.com/v1/public/characters';
+    const axios = require('axios');
+    const heroUrl = 'http://gateway.marvel.com/v1/public/comics';
     const publicKey = 'Cbb530c155c9e17b6ee5191f960ac608';
     const privateKey = '0fa56a9548b67cd96e06097e77e7c6f7a5f81647';
     const timeStamp = new Date().getTime();
 
     const md5 = require('md5');
     const hashKey = md5(publicKey + privateKey + timeStamp);
-    console.log(hashKey, ': new key <====');
 
-    // console.log(publicKey, privateKey, timeStamp);
+    //Iron Man Data
+    const newUrl =
+      heroUrl +
+      '?' +
+      'ts=' +
+      timeStamp +
+      '&apikey=' +
+      publicKey +
+      '&hash=' +
+      hashKey;
+
+    // console.log(timeStamp, hashKey)
+
+    axios
+      .get(heroUrl)
+      .then((response) => {
+        console.log(response, 'data <====');
+      })
+      .catch((error) => {
+        console.log(error, 'Something went wrong!');
+      });
   }
   render() {
     return (
