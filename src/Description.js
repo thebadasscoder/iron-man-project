@@ -6,25 +6,23 @@ class Description extends Component {
     isLoaded: false,
   };
   componentDidMount() {
-    const axios = require('axios');
-    const heroUrl = 'http://gateway.marvel.com/v1/public/comics';
-    const publicKey = 'Cbb530c155c9e17b6ee5191f960ac608';
-    const privateKey = '0fa56a9548b67cd96e06097e77e7c6f7a5f81647';
-    const timeStamp = new Date().getTime();
-
-    const md5 = require('md5');
-    const hashKey = md5(publicKey + privateKey + timeStamp);
-
-    //Iron Man Data
-    const newUrl =
-      heroUrl +
-      '?' +
-      'ts=' +
-      timeStamp +
-      '&apikey=' +
-      publicKey +
-      '&hash=' +
-      hashKey;
+    // ** INITIAL API KEY IMPLEMENTATION BEGINS **
+    // const  ts = new Date().getTime();
+    // const  publicKey = 'Cbb530c155c9e17b6ee5191f960ac608';
+    // const privateKey = '0fa56a9548b67cd96e06097e77e7c6f7a5f81647';
+    // const md5 = require('md5');
+    // const hashKey = md5(ts + publicKey + privateKey);
+    // fetch('http://gateway.marvel.com/v1/comics/?ts=' + ts + '&apikey=' + publicKey + '&hash=' + hashKey, {
+    //   "method": "GET"
+    // })
+    // .then((response) => response.json())
+    // .then((result) => this.setState({data: result.response}))
+    // .catch(err => {
+    //   console.log(err, 'there is an error!')
+    // })
+    // console.log(this.state.data ,'<=== before')
+    // console.log(ts);
+    // ** INITIAL API KEY IMPLEMENTATION ENDS HERE **
   }
   render() {
     return (
