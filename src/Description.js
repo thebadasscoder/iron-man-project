@@ -27,16 +27,6 @@ class Description extends Component {
       hashKey;
 
     // console.log(timeStamp, hashKey)
-
-    axios
-      .get(heroUrl)
-      .then((response) => {
-        console.log(response, 'data <====');
-      })
-      .catch((error) => {
-        console.log(error, 'Something went wrong!');
-      });
-  }
   render() {
     return (
       <div>
