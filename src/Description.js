@@ -25,8 +25,7 @@ class Description extends Component {
       publicKey +
       '&hash=' +
       hashKey;
-
-    // console.log(timeStamp, hashKey)
+  }
   render() {
     return (
       <div>
