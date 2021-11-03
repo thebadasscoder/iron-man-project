@@ -3,9 +3,22 @@ import React, { Component } from 'react';
 class Description extends Component {
   state = {
     data: [],
-    isLoaded: false,
   };
+
+  getData() {
+    // const url = 'https://superheroapi.com/api';
+    // const tokenKey = '5173967472619665';
+    // const heroId = '346';
+
+    // let newUrl = url + '/' + parseInt(tokenKey) + '/' + parseInt(heroId);
+
+    fetch('https://superheroapi.com/api/5173967472619665/346').then(
+      (response) => console.log(response, '<----')
+    );
+  }
+
   componentDidMount() {
+    this.getData();
     // ** INITIAL API KEY IMPLEMENTATION BEGINS **
     // const  ts = new Date().getTime();
     // const  publicKey = 'Cbb530c155c9e17b6ee5191f960ac608';
@@ -24,7 +37,9 @@ class Description extends Component {
     // console.log(ts);
     // ** INITIAL API KEY IMPLEMENTATION ENDS HERE **
   }
+
   render() {
+    // console.log(this.state.data);
     return (
       <div>
         <p>
