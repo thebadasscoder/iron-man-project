@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Description extends Component {
   state = {
-    data: [],
+    data: []
   };
 
   getData() {
@@ -12,14 +12,16 @@ class Description extends Component {
 
     // let newUrl = url + '/' + parseInt(tokenKey) + '/' + parseInt(heroId);
 
-    fetch('https://superheroapi.com/api/5173967472619665/346').then(
-      (response) => console.log(response, '<----')
-    );
+    fetch('https://superheroapi.com/api/5173967472619665/346', {
+      "method": "GET"
+    })
+    .then((response) => response.json())
+    .then((result) => this.setState({data: result}))
   }
 
   componentDidMount() {
     this.getData();
-    // ** INITIAL API KEY IMPLEMENTATION BEGINS **
+    // ** INITIAL API KEY IMPLEMENTATION BEGINS HERE **
     // const  ts = new Date().getTime();
     // const  publicKey = 'Cbb530c155c9e17b6ee5191f960ac608';
     // const privateKey = '0fa56a9548b67cd96e06097e77e7c6f7a5f81647';
@@ -35,6 +37,7 @@ class Description extends Component {
     // })
     // console.log(this.state.data ,'<=== before')
     // console.log(ts);
+    
     // ** INITIAL API KEY IMPLEMENTATION ENDS HERE **
   }
 
