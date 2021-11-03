@@ -37,7 +37,7 @@ class Description extends Component {
     // })
     // console.log(this.state.data ,'<=== before')
     // console.log(ts);
-    
+
     // ** INITIAL API KEY IMPLEMENTATION ENDS HERE **
   }
 
