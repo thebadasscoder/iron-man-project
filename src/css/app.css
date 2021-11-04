@@ -1,3 +1,5 @@
-.main_container {
-  background-image: url('./public/assets/background_desktop.png');
+@media (min-width: 375px){
+  .main_container{
+    
+  }
 }

@@ -2,8 +2,7 @@ import React from 'react';
 import Navigation from './Navigation.js';
 import Description from './Description.js';
 import CtaButton from './CtaButton.js';
-import SlideShow from './SlideShow.js';
-// import '../css/app.css';
+// import SlideShow from './SlideShow.js';
 
 export default function App() {
   return (
@@ -15,11 +14,11 @@ export default function App() {
         <CtaButton />
       </div>
       <div className="hero_detail_section">
-        <h1> Contrary to popular belief, he knows exactly what he's doing. </h1>
+        <h2> Contrary to popular belief, he knows exactly what he's doing. </h2>
         {/* Image From API Goes Here */}
 
         {/* <img src=""/> */}
-        <h1>Super-Genius Intelligence</h1>
+        <h4>Super-Genius Intelligence</h4>
         <p className="hero_detail_strengths">
           Quite apart from the powers granted him by the suit, Tony Stark is far
           more than a mechanical engineering prodigy who graduated from the
@@ -27,7 +26,7 @@ export default function App() {
         </p>
 
         {/* <img src=""/> */}
-        <h1>Expert Tactician</h1>
+        <h4>Expert Tactician</h4>
         <p className="hero_detail_strengths">
           He is a brilliant tactician capable of quickly formulating battle
           strategies and new plans if the situation changes, like being able to
@@ -35,14 +34,14 @@ export default function App() {
         </p>
 
         {/* <img src=""/> */}
-        <h1>Master Engineer</h1>
+        <h4>Master Engineer</h4>
         <p className="hero_detail_strengths">
           He is an excellent engineer and mechanic capable of fixing almost any,
           if not all machinery.
         </p>
 
         {/* <img src=""/> */}
-        <h1>Master Businessman</h1>
+        <h4>Master Businessman</h4>
         <p className="hero_detail_strengths">
           Stark is extremely well-respected in the business world, able to
           command people's attentions when he speaks on economic matters. He has
@@ -50,9 +49,7 @@ export default function App() {
           nothing.
         </p>
       </div>
-      <div>
-        <SlideShow />
-      </div>
+      <div>{/* <SlideShow /> */}</div>
     </div>
   );
 }
