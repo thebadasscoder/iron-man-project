@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Description extends Component {
   state = {
-    data: []
+    data: [],
   };
 
   getData() {
@@ -45,8 +45,8 @@ class Description extends Component {
   render() {
     console.log(this.state.data, '<=== After');
     return (
-      <div>
-        <p>
+      <div className="hero_description_container">
+        <p className="hero_description">
           Wounded, captured and forced to build a weapon by his enemies,
           billionaire industrialist Tony Stark instead created an advanced suit
           of armor to save his life and escape captivity. Now with a new outlook

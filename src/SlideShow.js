@@ -8,19 +8,29 @@ class SlideShow extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
     return (
       <div className="slider_container">
         <Slider {...settings}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <img src="./public/assets/comic1.png" />
+          </div>
+          <div>
+            <img src="./public/assets/comic2.png" />
+          </div>
+          <div>
+            <img src="./public/assets/comic3.png" />
+          </div>
+          <div>
+            <img src="./public/assets/comic4.png" />
+          </div>
+          <div>
+            <img src="./public/assets/comic5.png" />
+          </div>
+          <div>
+            <img src="./public/assets/comic6.png" />
+          </div>
         </Slider>
       </div>
     );

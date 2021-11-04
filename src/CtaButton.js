@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/cta_button.css';
 
 class CtaButton extends Component {
   render() {
