@@ -2,7 +2,8 @@ import React from 'react';
 import Navigation from './Navigation.js';
 import Description from './Description.js';
 import CtaButton from './CtaButton.js';
-import '../css/app.css';
+import SlideShow from './SlideShow.js';
+// import '../css/app.css';
 
 export default function App() {
   return (
@@ -49,11 +50,9 @@ export default function App() {
           nothing.
         </p>
       </div>
-      {/* <div
-        className="hero_slider_section"
-        data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "mobileFirst": true}'
-      >
-      </div> */}
+      <div>
+        <Slider />
+      </div>
     </div>
   );
 }
