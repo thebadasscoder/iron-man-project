@@ -1,4 +1,10 @@
 .cta_button {
   width: 220px;
   height: 45px;
+  background-color: #f4bc00;
+  border-color: #979797;
+  border-width: 0.83px;
+  border-radius: 3.12px;
+  color: white;
+  font-family: 'Ropa Sans';
 }
