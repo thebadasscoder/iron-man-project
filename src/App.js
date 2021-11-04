@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from './Navigation.js';
 import Description from './Description.js';
 import CtaButton from './CtaButton.js';
-import './style.css';
+import './app.css';
 
 export default function App() {
   return (
