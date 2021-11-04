@@ -13,10 +13,11 @@ class Description extends Component {
     // let newUrl = url + '/' + parseInt(tokenKey) + '/' + parseInt(heroId);
 
     fetch('https://superheroapi.com/api/5173967472619665/346', {
-      "method": "GET"
+      method: 'GET',
     })
-    .then((response) => response.json())
-    .then((result) => this.setState({data: result}))
+      .then((response) => response.json())
+      .then((result) => this.setState({ data: result }));
+    console.log(this.state.data, '<=== Before');
   }
 
   componentDidMount() {
@@ -42,7 +43,7 @@ class Description extends Component {
   }
 
   render() {
-    // console.log(this.state.data);
+    console.log(this.state.data, '<=== After');
     return (
       <div>
         <p>
