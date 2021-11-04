@@ -5,7 +5,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation_container">
-        <h4 className="signin">Sign In</h4>
+        <h1 className="signin">Sign In</h1>
         <button className="signup_button">Sign Up</button>
       </div>
     );

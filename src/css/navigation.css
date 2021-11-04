@@ -1,4 +1,24 @@
-.navigation_container {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 375px) {
+  .navigation_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .signin {
+    font-family: 'Ropa Sans';
+    font-size: 15px;
+    font-weight: 100;
+    margin-right: 15px;
+  }
+
+  .signup_button {
+    width: 72px;
+    height: 24px;
+    background-color: #f4bc00;
+    border-color: #979797;
+    color: white;
+    font-weight: 100;
+    margin-top: 5px;
+  }
 }
